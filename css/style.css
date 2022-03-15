@@ -197,6 +197,7 @@ button {
 
 .hero {
 	background: var(--bg);
+	background-image: url(../images/bg-main.svg);
 }
 
 .section-hero {
