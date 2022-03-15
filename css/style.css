@@ -328,6 +328,14 @@ button {
 	padding: 60px 0;
 }
 
+.container-footer {
+	display: flex;
+}
+
+.footer-block {
+	margin-right: 70px;
+}
+
 .block-title {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
@@ -363,6 +371,44 @@ button {
 .footer-tel:hover,
 :focus {
 	color: var(--blue);
+}
+
+.footer-block2 {
+	padding-top: 15px;
+}
+
+.block2-text {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.03em;
+	color: var(--white);
+	margin-bottom: 20px;
+}
+
+.footer-soc {
+	display: flex;
+}
+
+.soc-li:not(:last-child) {
+	margin-right: 10px;
+}
+
+.soc {
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+}
+
+.soc:hover {
+	background-color: var(--blue);
+}
+
+.soc-svg {
+	width: 20px;
+	height: 20px;
+	fill: #fff;
 }
 
 /*-------------PORTFOLIO------------*/
