@@ -196,8 +196,11 @@ button {
 /*--------------hero---------------*/
 
 .hero {
-	background: var(--bg);
-	background-image: url(../images/bg-main.svg);
+	max-width: 1600px;
+	height: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg-main.jpg);
 }
 
 .section-hero {
@@ -305,7 +308,7 @@ button {
 }
 
 .workers-div {
-	padding: 30px 0px;
+	padding: 30px 0px 16px 0px;
 }
 
 .worker-name {
@@ -319,6 +322,68 @@ button {
 	font-size: 16px;
 	color: var(--grey);
 	line-height: 1.18;
+}
+
+.team-soc {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 30px;
+}
+
+.soc-team {
+	border-radius: 50%;
+	width: 44px;
+	height: 44px;
+	background: #fff;
+}
+
+.soc-team:hover {
+	background-color: var(--blue);
+}
+
+.team-svg {
+	width: 20px;
+	height: 20px;
+	fill: #afb1b8;
+}
+
+.team-svg:hover {
+	fill: #fff;
+}
+
+/*-------------clients------------*/
+
+.clients-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	margin-bottom: 50px;
+}
+
+.clients {
+	display: flex;
+	justify-content: center;
+}
+
+.clients-li {
+}
+
+.clients-li:not(:last-child) {
+	margin-right: 30px;
+}
+
+.clients-btn {
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	width: 170px;
+	height: 92px;
+}
+
+.clients-svg {
+	width: 106px;
+	height: 60px;
 }
 
 /*-------------footer--------------*/
@@ -399,6 +464,7 @@ button {
 	border-radius: 50%;
 	width: 44px;
 	height: 44px;
+	background: rgba(255, 255, 255, 0.1);
 }
 
 .soc:hover {
