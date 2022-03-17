@@ -263,6 +263,14 @@ button {
 	line-height: 1.71;
 }
 
+.benefit-div {
+	background-color: #f5f4fa;
+	width: 270px;
+	height: 120px;
+	margin-bottom: 30px;
+	padding: 25px 100px;
+}
+
 /*-------------devices-------------*/
 
 .devices-title {
@@ -335,20 +343,26 @@ button {
 	width: 44px;
 	height: 44px;
 	background: #fff;
+	fill: var(--grey);
 }
 
 .soc-team:hover {
 	background-color: var(--blue);
-}
-
-.team-svg {
-	width: 20px;
-	height: 20px;
-	fill: #afb1b8;
-}
-
-.team-svg:hover {
 	fill: #fff;
+}
+
+.clients-btn {
+	border: 1px solid #afb1b8;
+	border-radius: 4px;
+	width: 170px;
+	height: 92px;
+	background-color: #fff;
+	fill: var(--grey);
+}
+
+.clients-btn:hover {
+	border: 1px solid var(--blue);
+	fill: var(--blue);
 }
 
 /*-------------clients------------*/
@@ -367,9 +381,6 @@ button {
 	justify-content: center;
 }
 
-.clients-li {
-}
-
 .clients-li:not(:last-child) {
 	margin-right: 30px;
 }
@@ -379,11 +390,13 @@ button {
 	border-radius: 4px;
 	width: 170px;
 	height: 92px;
+	background-color: #fff;
+	fill: var(--grey);
 }
 
-.clients-svg {
-	width: 106px;
-	height: 60px;
+.clients-btn:hover {
+	border: 1px solid var(--blue);
+	fill: var(--blue);
 }
 
 /*-------------footer--------------*/
@@ -472,8 +485,6 @@ button {
 }
 
 .soc-svg {
-	width: 20px;
-	height: 20px;
 	fill: #fff;
 }
 
