@@ -175,10 +175,12 @@ button {
 	color: var(--grey);
 	letter-spacing: 0.02em;
 	line-height: 1.14;
+	display: inline-flex;
 }
 
 .header-contacts {
-	margin-left: 320px;
+	margin-left: auto; /*320px*/
+	display: flex;
 }
 
 .header-email:hover,
@@ -191,6 +193,15 @@ button {
 :focus {
 	color: var(--blue);
 	background-color: var(--white);
+}
+
+.contacts-icon {
+	margin-right: 10px;
+	fill: currentColor;
+}
+
+.contacts-icon:hover {
+	fill: var(--blue);
 }
 
 /*--------------hero---------------*/
@@ -408,6 +419,7 @@ button {
 
 .container-footer {
 	display: flex;
+	align-items: baseline;
 }
 
 .footer-block {
@@ -449,10 +461,6 @@ button {
 .footer-tel:hover,
 :focus {
 	color: var(--blue);
-}
-
-.footer-block2 {
-	padding-top: 15px;
 }
 
 .block2-text {
