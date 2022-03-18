@@ -83,13 +83,6 @@ h6 {
 
 /*-----------*/
 
-:root {
-	--blue: #2196f3;
-	--white: #ffffff;
-	--grey: #757575;
-	--bg: #2f303a;
-}
-
 body {
 	font-family: "Roboto", sans-serif;
 	color: #212121;
@@ -132,8 +125,14 @@ button {
 	margin-right: 90px;
 }
 
+.logo:focus {
+	background-color: #ffffff;
+	box-shadow: none;
+	color: #212121;
+}
+
 .logo-span {
-	color: var(--blue);
+	color: #2196f3;
 }
 
 .header {
@@ -161,8 +160,14 @@ button {
 
 .list-item:hover,
 :active {
-	background-color: var(--white);
-	color: var(--blue);
+	background-color: #ffffff;
+	color: #2196f3;
+}
+
+.list-item:focus {
+	background-color: #ffffff;
+	color: #2196f3;
+	box-shadow: none;
 }
 
 .header-email {
@@ -172,7 +177,7 @@ button {
 .header-email,
 .header-tel {
 	font-weight: 500;
-	color: var(--grey);
+	color: #757575;
 	letter-spacing: 0.02em;
 	line-height: 1.14;
 	display: inline-flex;
@@ -183,16 +188,26 @@ button {
 	display: flex;
 }
 
-.header-email:hover,
-:focus {
-	color: var(--blue);
-	background-color: var(--white);
+.header-email:hover {
+	color: #2196f3;
+	background-color: #ffffff;
 }
 
-.header-tel:hover,
-:focus {
-	color: var(--blue);
-	background-color: var(--white);
+.header-email:focus {
+	background-color: #ffffff;
+	color: #2196f3;
+	box-shadow: none;
+}
+
+.header-tel:hover {
+	color: #2196f3;
+	background-color: #ffffff;
+}
+
+.header-tel:focus {
+	background-color: #ffffff;
+	color: #2196f3;
+	box-shadow: none;
 }
 
 .contacts-icon {
@@ -201,7 +216,7 @@ button {
 }
 
 .contacts-icon:hover {
-	fill: var(--blue);
+	fill: #2196f3;
 }
 
 /*--------------hero---------------*/
@@ -219,7 +234,7 @@ button {
 }
 
 .hero-title {
-	color: var(--white);
+	color: #ffffff;
 	font-size: 44px;
 	text-transform: uppercase;
 	font-weight: 900;
@@ -236,8 +251,8 @@ button {
 }
 
 .btn {
-	background-color: var(--blue);
-	color: var(--white);
+	background-color: #2196f3;
+	color: #ffffff;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 1.87;
@@ -253,10 +268,6 @@ button {
 	justify-content: space-between;
 }
 
-.section-benefits {
-	padding-top: 94px;
-}
-
 .benefit {
 	width: 260px;
 }
@@ -270,7 +281,7 @@ button {
 }
 
 .benefit-text {
-	color: var(--grey);
+	color: #757575;
 	line-height: 1.71;
 }
 
@@ -339,7 +350,7 @@ button {
 
 .position {
 	font-size: 16px;
-	color: var(--grey);
+	color: #757575;
 	line-height: 1.18;
 }
 
@@ -354,11 +365,12 @@ button {
 	width: 44px;
 	height: 44px;
 	background: #fff;
-	fill: var(--grey);
+	fill: #afb1b8;
 }
 
-.soc-team:hover {
-	background-color: var(--blue);
+.soc-team:hover,
+:focus {
+	background-color: #2196f3;
 	fill: #fff;
 }
 
@@ -368,12 +380,12 @@ button {
 	width: 170px;
 	height: 92px;
 	background-color: #fff;
-	fill: var(--grey);
+	fill: #757575;
 }
 
 .clients-btn:hover {
-	border: 1px solid var(--blue);
-	fill: var(--blue);
+	border: 1px solid #2196f3;
+	fill: #2196f3;
 }
 
 /*-------------clients------------*/
@@ -401,19 +413,25 @@ button {
 	border-radius: 4px;
 	width: 170px;
 	height: 92px;
-	background-color: #fff;
-	fill: var(--grey);
+	fill: #afb1b8;
 }
 
 .clients-btn:hover {
-	border: 1px solid var(--blue);
-	fill: var(--blue);
+	border: 1px solid #2196f3;
+	fill: #2196f3;
+}
+
+.clients-btn:focus {
+	background-color: #fff;
+	fill: #2196f3;
+	border: 1px solid #2196f3;
+	box-shadow: none;
 }
 
 /*-------------footer--------------*/
 
 .footer {
-	background-color: var(--bg);
+	background-color: #2f303a;
 	padding: 60px 0;
 }
 
@@ -430,17 +448,17 @@ button {
 	font-family: "Raleway", sans-serif;
 	font-weight: 700;
 	font-size: 26px;
-	color: var(--white);
+	color: #ffffff;
 	line-height: 1.19;
 }
 
 .footer-span {
-	color: var(--blue);
+	color: #2196f3;
 }
 
 .address {
 	font-style: normal;
-	color: var(--white);
+	color: #ffffff;
 	line-height: 1.71;
 	margin-top: 25px;
 }
@@ -455,12 +473,12 @@ button {
 
 .footer-email:hover,
 :focus {
-	color: var(--blue);
+	color: #2196f3;
 }
 
 .footer-tel:hover,
 :focus {
-	color: var(--blue);
+	color: #2196f3;
 }
 
 .block2-text {
@@ -469,7 +487,7 @@ button {
 	font-size: 14px;
 	line-height: 1.14;
 	letter-spacing: 0.03em;
-	color: var(--white);
+	color: #ffffff;
 	margin-bottom: 20px;
 }
 
@@ -489,7 +507,7 @@ button {
 }
 
 .soc:hover {
-	background-color: var(--blue);
+	background-color: #2196f3;
 }
 
 .soc-svg {
@@ -516,7 +534,7 @@ button {
 }
 
 .filter-items {
-	padding: 10px 20px;
+	padding: 6px 22px;
 	border-radius: 4px;
 }
 
@@ -526,8 +544,8 @@ button {
 
 .filter-items:hover,
 :focus {
-	background-color: var(--blue);
-	color: var(--white);
+	background-color: #2196f3;
+	color: #ffffff;
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -568,7 +586,7 @@ button {
 .item-text {
 	font-size: 16px;
 	line-height: 1.9;
-	color: var(--grey);
+	color: #757575;
 	line-height: 1.87;
 }
 
